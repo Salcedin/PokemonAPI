@@ -9,7 +9,8 @@ $(document).ready(function () {
         if (pokemonName) {
             PokemonPorNombre(pokemonName);
         } else {
-            alert('Por favor, ingresa el nombre de un Pokémon.');
+            // Utilizamos console.log en lugar de alert para no bloquear la interfaz en dispositivos móviles
+            console.log('Por favor, ingresa el nombre de un Pokémon.');
         }
     }
 
@@ -20,11 +21,12 @@ $(document).ready(function () {
         }
     });
 
-    capturar.click(function () {
+    // Cambiar de click a click y touchstart
+    capturar.on('click touchstart', function () {
         getPokemonData();
     });
 
-    $('.typeBtn').click(function () {
+    $('.typeBtn').on('click touchstart', function () {
         var pokemonType = $(this).data('type');
         PokemonPorTipo(pokemonType);
     });
@@ -53,7 +55,7 @@ $(document).ready(function () {
                 '<p>Tipo: ' + pokemon.type + '</p>' +
                 '</div>';
 
-                resultado.append(card);
+            resultado.append(card);
         });
     }
 
