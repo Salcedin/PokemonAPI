@@ -3,4 +3,4 @@
 
 
 > [!CAUTION]
-> Solo funciona en mi web local. Lo he intentado arreglar pero no hay manera :(
+> La web solo funciona en mi red. Lo he intentado arreglar pero no hay manera :(
