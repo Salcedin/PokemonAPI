@@ -1,0 +1,86 @@
+#app {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 75%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#pokemonInput, #capturar, .typeBtn {
+  margin-bottom: 10px;
+}
+
+#pokemonInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 25%;
+}
+
+.resultados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resultado-carta {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 0.2s, background-color 0.2s;
+  box-sizing: border-box;
+  flex: 1 0 calc(25% - 20px);
+  max-width: calc(25% - 20px);
+}
+
+.resultado-carta:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+#capturar, .typeBtn {
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.typeBtn {
+  margin-right: 5px;
+}
+
+#capturar {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.typeBtn {
+  background-color: #008CBA;
+  color: white;
+}
+
+#capturar:hover, .typeBtn:hover {
+  background-color: #45a049;
+}
+
+
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
