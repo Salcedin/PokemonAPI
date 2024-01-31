@@ -88,6 +88,21 @@
   width: 50%;
 }
 
+
+#footer {
+  /* Estilos específicos para el div que deseas centrar */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 /* Estilos específicos para dispositivos móviles */
 @media screen and (max-width: 600px) {
   #pokemonInput {
@@ -108,5 +123,9 @@
 
   #logo {
     width: 80%;
+  }
+
+  body{
+    font-size: 8px;
   }
 }
