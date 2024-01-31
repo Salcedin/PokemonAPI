@@ -62,7 +62,7 @@ $(document).ready(function () {
     async function PokemonPorNombre(pokemonName) {
         try {
             const apiResponse = await $.ajax({
-                url: 'http://localhost:3000/api-data/' + pokemonName,
+                url: 'http://192.168.1.220:3000/api-data/' + pokemonName,
                 type: 'GET',
                 dataType: 'json'
             });
@@ -76,7 +76,7 @@ $(document).ready(function () {
     async function PokemonPorTipo(pokemonType) {
         try {
             const apiResponse = await $.ajax({
-                url: 'http://localhost:3000/api-data/type/' + pokemonType,
+                url: 'http://192.168.1.220:3000/api-data/type/' + pokemonType,
                 type: 'GET',
                 dataType: 'json'
             });
