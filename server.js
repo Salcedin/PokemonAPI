@@ -1,9 +1,11 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors'); // Agrega la importación de cors
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
+app.use(cors()); // Usa cors antes de definir tus rutas
 app.use(express.json());
 app.use(express.static('public'));
 app.use('/scripts', express.static('public/scripts', { 'Content-Type': 'application/javascript' }));
@@ -45,5 +47,5 @@ app.get('/api-data/type/:type', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor escuchando en el puerto 3000`);
+    console.log(`Servidor escuchando en el puerto ${port}`);
 });
