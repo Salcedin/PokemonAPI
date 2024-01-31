@@ -8,7 +8,9 @@
   margin-top: 50px;
 }
 
-#pokemonInput, #capturar, .typeBtn {
+#pokemonInput,
+#capturar,
+.typeBtn {
   margin-bottom: 10px;
 }
 
@@ -48,7 +50,8 @@
   background-color: #f0f0f0;
 }
 
-#capturar, .typeBtn {
+#capturar,
+.typeBtn {
   border: none;
   padding: 10px 15px;
   cursor: pointer;
@@ -71,10 +74,10 @@
   color: white;
 }
 
-#capturar:hover, .typeBtn:hover {
+#capturar:hover,
+.typeBtn:hover {
   background-color: #45a049;
 }
-
 
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
 
@@ -83,4 +86,27 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  #pokemonInput {
+    width: 100%;
+  }
+
+  .resultado-carta {
+    flex: 1 0 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  #capturar,
+  .typeBtn {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  #logo {
+    width: 80%;
+  }
 }
